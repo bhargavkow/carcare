@@ -1,0 +1,291 @@
+/* General Styles */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #060c1f;
+  font-family: "Almarai", sans-serif;
+}
+
+.wrapper1 {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 70px;
+}
+
+.main-div {
+  position: relative;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.main-div3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+  z-index: -1;
+  animation: half-yellow-shadow 5s ease infinite;
+  border-radius: 5px;
+}
+
+.main-div3::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+  z-index: -1;
+  animation: half-cyan-shadow 5s ease infinite;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+ 
+  color: #fff;
+  
+}
+
+/* Keyframe Animations */
+@keyframes half-yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    top: 0;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@keyframes half-cyan-shadow {
+  0% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    bottom: 0;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    bottom: 50%;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+/* Hiring Card Styles */
+.hiring-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.hiring-content {
+  padding: 32px;
+  text-align: left;
+}
+
+.hiring-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hiring-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.explore-button {
+  background-color: #e60023;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #c5001d;
+}
+
+.hiring-image {
+  width: 50%;
+}
+
+.hiring-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add this to your existing styles */
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.info-image {
+  width: 300px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.info-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffff01; /* Matches the yellow shadow theme */
+}
+
+.info-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+.main-div3 {
+  position: relative;
+  margin: 10px;
+  background-color: #1a1a2e; /* Dark blue background color */
+  padding: 20px; /* Add padding for content spacing */
+  border-radius: 10px; /* Optional rounded corners */
+
+  display: flex; /* Flexbox for layout */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Make it responsive */
+}
+
+.main-div3 h1 {
+  font-size: 50px;
+  color: #fff;
+
+  margin-bottom: 10px;
+}
+
+.main-div3 p {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+
+  margin-top: 10px;
+}
+
+.main-div3 img {
+  height: auto;
+  border-radius: 8px; /* Optional image rounding */
+  margin-top: 10px;
+
+  width: 45%; /* Allocate 45% of width for image */
+}
+
+.main-div3 .text-content {
+  width: 45%; /* Allocate 45% of width for text */
+  color: #fff;
+}
+
+

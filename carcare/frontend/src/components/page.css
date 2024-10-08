@@ -1,0 +1,90 @@
+
+
+.page-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 5%;
+  height: auto;
+  width: 100vw;
+  max-width: 1200px; /* Restrict maximum width for better responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+h1.title1 {
+  font-size: 50px;
+  font-weight: bold;
+ 
+  color: white;
+}
+
+p.subtitle {
+  font-size: 20px;
+  
+  color: white;
+}
+
+.service-heading{
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-between; /* Space between the image containers */
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  gap: 20px; /* Space between containers */
+  width: 100%; /* Full width */
+}
+
+.image-container2 {
+  flex: 1 1 calc(33.33% - 40px); /* Ensure 3 containers per row, adjust for gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 100%; /* Let containers take full available width */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+.image-container2 img {
+  width: 310px;
+  height: 300px;
+}
+
+.info {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  margin-top: 10px;
+}
+
+.info h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.info p {
+  font-size: 15px;
+  color: white;
+}
+
+/* Media query to ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .image-container2 {
+    flex: 1 1 100%; /* Full width for smaller screens */
+  }
+
+  .content2 {
+    justify-content: center; /* Center content when stacked */
+  }
+}

@@ -1,0 +1,62 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('../images/bg11.webp') no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.od {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px; 
+  box-sizing: border-box;
+  background: transparent; 
+}
+
+.id {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 3.5rem 0;
+  max-width: 1200px; 
+  width: 100%;
+}
+
+h2 {
+  font-size: 36px;
+  color: white;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+
+
+p {
+  color: rgb(209, 209, 218);
+  font-size: 20px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  height: 200px;
+  margin: 0 30px;
+}
+
+.h2p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

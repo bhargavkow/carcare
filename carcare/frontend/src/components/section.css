@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /* Ensures items are in one row */
+  flex-wrap: nowrap; /* Prevents wrapping to the next line */
+  margin: 20px;
+  background-color: transparent;
+  max-width: 80%;
+  height: auto; /* Allows height to adjust based on content */
+  margin: 0 auto;
+  height: 70vh;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; /* Adjust margin as needed */
+  flex-direction: column;
+  background-color: transparent;
+  height: auto; /* Allows height to adjust based on content */
+  text-align: center;
+  flex: 1; /* Allows items to grow equally in a row */
+}
+
+.icon {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.icon img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background-size: cover;
+ 
+}
+
+.text {
+  font-size: 20px;
+  color: white;
+}
+
+h1.heading {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+p.heading2{
+  color: rgba(255, 255, 255, 0.296);
+  font-size: 20px;
+  text-align: center;
+  
+}

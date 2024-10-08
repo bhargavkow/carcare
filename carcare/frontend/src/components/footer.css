@@ -1,0 +1,72 @@
+.footer {
+  background-color: black;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the entire content */
+  justify-content: center; /* Center content vertically */
+  color: #f1f1f1;
+  text-align: center; /* Center text */
+  width: 100%; /* Ensure full width */
+  height: 500px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center each section */
+  justify-content: center; /* Center content inside each section */
+  max-width: 1200px; /* Limit the width to keep content centered */
+  width: 100%;
+}
+
+.footer-section {
+  padding: 10px;
+  width: 100%; /* Take full width of container */
+}
+
+.footer-section h4 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center social icons */
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #ffcc00;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f1f1f1;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between; /* Space out sections on larger screens */
+    text-align: left;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    width: auto; /* Allow sections to adjust based on content */
+  }
+}
